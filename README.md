@@ -1,2 +1,0 @@
-# FayDailyStudy
-nothing here.
