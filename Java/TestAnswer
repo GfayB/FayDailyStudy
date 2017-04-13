@@ -1,0 +1,28 @@
+  C1--------------------------------------------
+  1.HelloWorld.java
+  public class HelloWorld{
+    public static void main(String args[]){
+       System.out.println("你好，世界!");
+    }
+ }
+ 2.DataOnly.java
+ public class DataOnly{
+   	public static void main(String[] args) {
+   		class Data{
+   			int i;
+   			float f;
+   			boolean b;
+   			void prin(){
+   				System.out.println(i);
+   				System.out.println(f);
+   				System.out.println(b);
+   			}
+   		}
+   		Data d = new Data();
+   		d.i =2;
+   		d.f =2.1f;
+   		d.b =true;
+   		d.prin();
+   	}
+}
+C2--------------------------------------------
