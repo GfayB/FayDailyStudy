@@ -69,7 +69,9 @@ class DataOnly{
    float f;
    boolean;
 }
+尽管这个类还什么都不能做，但你可以给它创建一个新的对象
 DataOnly d= new DataOnly();
+给字段赋值需要知道如何具体引用一个对象的成员：引用对象的名称.对象内部成员名eg:d.i
 d.i=47;
 d.f=1.1f;//数字后的f表示浮点数
 d.b=false;
@@ -96,48 +98,42 @@ returnType methodName(/*argument list参数列表*/){
 调用结构如下：
 objectName.methodName(arg1,arg2,...);
 参数列表
-方法的参数列表制定要传递给方法的信息
+方法的参数列表指定要传递给方法的信息
+return关键字的作用有二：其一是代表已经执行完方法内代码，离开此方法。其二，如果方法产生了一个值，这个值要放在return语句后面。若返回类型为void那么
+return关键字的作用就是退出方法，如果不是void，那么无论在何处返回编译器都会强制返回一个正确类型的返回值。
+使用预先定义好的类：使用import关键字导入标准类库的构件，如：import java.util.ArrayList;
+util中包含了很多类，如果需要使用其中几个又不想一一指明，就可以使用“*”通配符：import java.util.*;
+static关键字
+当声明一个事物是static时，就意味着这个数据或方法不会与包含它的类的任何对象实例联系在一起，所以即使从未创建某个类的任何对象，也可以调用其static方法
+或访问其static数据。
+eg：生成一个static字段并对其初始化
+class StaticTest{
+       static int i=47
+}
+然后即使创建了两个StaticTest对象Static.i也只有一份存储空间，这两个对象共享一个i
+StaticTest st1=new StaticTest();
+StaticTest st2=new StaticTest();
+这里st1和st2指向的是同一个存储空间所以它们的值都是47。
+定义静态方法的做法和定义静态字段的做法类似
+class StaticFunc{
+   static void incr(){
+      StaticTest.i++;
+   }
+}
+通过对象来代用incr()
+StaticFunc sf=new StaticFunc();
+sf.incr();
+或者因为incr()是一个静态方法，可以直接通过类调用：StaticFunc.incr();
+static作用于某个字段时，static字段对每个类来说就只有一份存储空间
+但static方法的一个重要作用就是可以在不常见任何一个对象的前提下调用它。
+-----------------------------------------------------
+第一个java程序（//后的单行和/**/中间包裹的段落均为程序注释）
+//HelloData.java
+import java.util.*;//导入外部类
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+public calss HelloDate{//java的类名第一个字母必须大写
+   public static void main(String[] args){
+      System.out.prinln("Hello,it's:");
+      System.out.println(new Date());
+   }
+}
