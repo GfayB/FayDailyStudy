@@ -1,1 +1,17 @@
-xbdfhrejrj
+验证前缀递增（减）和后缀递增（减）的作用
+public class MathOps
+{
+   public static void main(String Args[])
+   {
+      int i=1;
+
+System.out.println("i=:"+i);
+System.out.println("++i=:"+ ++i);
+System.out.println("i++=:"+ i++);
+
+System.out.println("i=:"+i);
+System.out.println("--i=:"+ --i);
+System.out.println("i--=:"+ i--);
+System.out.println("i=:"+i);
+   }
+}
