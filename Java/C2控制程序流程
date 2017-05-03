@@ -41,14 +41,6 @@ java中也使用简化符号：+=、-=、*=、、=意为进行相应的运算后
 eg:x+=4就意味着x=x+4
 
 
-
-
-
-
-
-
-
-
 验证前缀递增（减）和后缀递增（减）的作用
 public class MathOps
 {
@@ -75,6 +67,39 @@ i=:3
 --i=:2
 i--=:2
 i=:1
+
+
+关系操作符------------------------------
+关系操作符生成的结果是布尔型的，即关系真实则生成“true”，否则生成“false”
+关系操作符包括大于>、小于<、小于等于<=、大于等于>=、等于==以及不等于!=。
+等于和不等于也适用于所有的对象，以等于不等于为例说明关系操作符。
+
+public class  Equivalence
+{
+	public static void main(String[] args) 
+	{
+		int n1=5;
+		int n2=7;
+
+		System.out.println("n1==n2的输出结果:");
+		System.out.println(n1==n2);
+		System.out.println("n1!=n2的输出结果:");
+		System.out.println(n1!=n2);
+		System.out.println("n1!=n2的输出结果应为false:");
+		System.out.println("n1!=n2的输出结果应为true:");
+
+	}
+}
+
+ 程序的输出结果应该为
+n1==n2的输出结果:
+false
+n1!=n2的输出结果:
+true
+n1!=n2的输出结果应为false:
+n1!=n2的输出结果应为true:
+
+
 
 
 
