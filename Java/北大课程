@@ -1,0 +1,64 @@
+目录==========================
+第二章-------------------31
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.1Java程序的类型与基本构成
+*application程序
+如HelloWorld.java
+public class HelloWorld{
+   public static void main(String aggs[]){
+      System.out.println("hello world!");
+   }
+}
+class是主体，main()方法的写法是固定的
+public类的名称与文件名是一致的
+System.out.println/print/printf
+*applet程序
+同样HelloWorld.java
+import java.awt.*;
+import java.applet.*;
+import javax.swing.*;
+public class HelloWorld extends JApplet{
+   public void main(Graphics g){
+      g.drawString("HelloWolrd",20,20);
+   }
+}
+import 表示导入预设包
+extends JApplet表示继承//extends Applet也可以
+paint()表示如何绘制
+没有main()方法
+需要在网页代码中实现
+<HTML>
+<HEAD><TITLE> An Applet</TITLE></HEAD>
+<BODY>
+<applet code="HelloWorld.class"
+   width=200 height=42 background=white>
+</applet>
+</BODY>
+</HTML>
