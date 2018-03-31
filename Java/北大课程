@@ -62,3 +62,41 @@ paint()表示如何绘制
 </applet>
 </BODY>
 </HTML>
+*程序的基本构成
+package语句-1/0
+import语句-1/n
+类定义--class-1/n（一个文件只能有一个public类）
+类=类头+类体
+类成员=字段（filed属性，变量）+方法（method函数）
+方法=方法头+方法体
+2.2开发基本步骤
+源程序编辑-->程序编译-->程序运行
+*设定path和classpath
+-永久设定 在命令行中使用set path设定
+         在系统环境中找到环境变量设置
+-临时设定 在javac及java命令行上使用-classpath（或-cp）选项引用别的库
+如：javac -cp libxx.jar 源文件名.java
+    java -cp libxx.jar  类名
+用appletViewer来运行applet程序，编译时仍然使用javac
+然后运行时：appletViewer HelloWorld.html
+其他的工具：jar-打包工具
+           javadoc-生成文档
+           javap-查看类信息及反汇编 javap 类名 |反汇编：javap -c 类名
+2.3输入与输出
+*文本界面使用Scanner类(1.5版本以后)
+使用jva.util.Scanner
+使用nextInt()方法
+使用nextDouble()方法
+next()得到下一个单词
+*图形界面的输入输出
+使用TextField获取用户输入数据
+使用Label或文本框来输出入
+使用命令按钮Button执行命令
+--首先需要创建自己的图形界面
+--然后添加对象
+add()
+--然后添加处理事件
+eg：btn.addActionListener(new BtnActionAdapter());
+class BtnActionAdapter implements ActionListener{}
+2.4集成开发工具
+如：eclipse，NetBeans等
