@@ -1,5 +1,6 @@
 目录==========================
-第二章-------------------31
+第二章简单的Java程序---31
+第三章 数据运算，流控制和数组---104
 
 
 
@@ -27,7 +28,7 @@
 
 
 
-
+第二章简单的Java程序
 2.1Java程序的类型与基本构成
 *application程序
 如HelloWorld.java
@@ -100,3 +101,15 @@ eg：btn.addActionListener(new BtnActionAdapter());
 class BtnActionAdapter implements ActionListener{}
 2.4集成开发工具
 如：eclipse，NetBeans等
+第三章 数据运算，流控制和数组
+3.1数据类型、变量与常量
+数据类型决定数据的存储方式和运算方式
+*基本数据类型/引用数据类型
+两种数据类型的差别
+基本类型：变量在栈 double d = 3 赋值时复制值
+引用类型：数据引用到堆 Person p =  new Person() 引用在一定意义上就是指针 赋值时复制的是引用
+注意标识符
+类名首字母应大写
+名称应与意义有关，增加可读性
+常量随用随加
+3.2运算符与表达式
