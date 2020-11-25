@@ -58,5 +58,26 @@ python2.x和3.x的print语句有区别，3.x版本中print作为一个函数存�
 --单行注释（#）
   *python中使用井号键(#)表示单行注释，#后面的内容都会被当做注释内容，但仅限本行结束
 --多行注释（'''）
-  *python中使用三个单引号（英文模式）来表示多行注释，以'''和'''结尾，则中间的内容都会被当做注释内容。
-      
+  *python中使用三个单引号（英文模式）来表示多行注释，以'''和'''结尾，则中间的内容都会被当做注释内容.
+▶Python之禅
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
