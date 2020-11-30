@@ -12,4 +12,17 @@
 
 --修改、添加和删除元素
   *修改列表元素：可以使用指定列表名和索引的方式重新赋值，如motocycles[0]='ducati'，则原本列表中的第一个元素值就被修改为ducati。
-  *在列表中添加新的元素：
+  *在列表末尾添加新的元素：在列表末尾添加元素：list.append('element')即可将元素添加至list的末尾
+  *在列表中插入元素：使用insert()在list的任意位置添加元素，使用方法如list.insert(index,element),如moto.insert(0,'suzuki')
+  *从列表中删除元素：使用【del语句】、【pop语句】
+    #如果知道需要删除元素的位置，则del list[index]
+    #pop()可以删除list末尾的元素并获取该元素，下面是一段示例代码
+      motos=['honda','yamaha','suzuki']
+      print (moto)
+    
+      poped_moto = moto.pop()
+      print (poped_moto)
+      --两次print打印的结果分别为--
+      ['honda', 'yamaha', 'suzuki']
+      suzuki
+      
