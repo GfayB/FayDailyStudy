@@ -10,7 +10,7 @@
   *列表中第一个元素的索引是0
   *可以使用索引-1来访问列表的最后一个元素
 
---修改、添加和删除元素
+▶修改、添加和删除元素
   *修改列表元素：可以使用指定列表名和索引的方式重新赋值，如motocycles[0]='ducati'，则原本列表中的第一个元素值就被修改为ducati。
   *在列表末尾添加新的元素：在列表末尾添加元素：list.append('element')即可将元素添加至list的末尾
   *在列表中插入元素：使用insert()在list的任意位置添加元素，使用方法如list.insert(index,element),如moto.insert(0,'suzuki')
@@ -27,3 +27,5 @@
       suzuki
    #根据元素值删除元素-remove()方法-list.remove(element).remove()只能删去列表中第一个该元素，不能删去该列表中重复出现的该元素。
    
+▶组织列表
+
