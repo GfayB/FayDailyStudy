@@ -67,3 +67,11 @@
        do thing x
 ▶使用if语句处理列表
 --检查特殊元素
+ *可以在遍历列表时增加if判定来判定某个特殊元素是否满足条件
+  假设需要判定列表list中元素z满足条件condition
+  list = [x,y,z,p,s]
+  for element in list:
+      if z==condition:
+          print(...)
+      else:
+          print(...)
