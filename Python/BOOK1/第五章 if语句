@@ -12,3 +12,58 @@
 --数学比较
   *数学中的比较都可以用来做if语句的检查条件
   *大于、大于等于、小于、小于等于
+
+--检查多个条件
+  *使用and或者or来连接多个条件
+  *‘与’->and，连接连个表达式，多个表达式结果均为True则通过检测
+  *‘或’->or，连接多个表达式，任意一个表达式的结果为True则通过检测
+  
+--关键词【in】和【not in】
+  *检查某个特定值是否在列表中用in--> x in list
+  *检查某个特定值是否不在列表中用not in--> x not in list
+  *返回值均为True和False
+  
+--布尔表达式
+  *即条件测试
+  
+▶if语句
+--简单的if语句结构为
+  if condition：
+      do something
+
+--if-else语句
+  *当if后的表达式结果为false时执行else后的表达式
+  *该语句结构为
+   if condition1：
+       do something
+   else:
+       do anther thing
+--if-elif-else语句
+  *依次检查每个条件，执行符合结果为True表达式后的语句
+  *该语句结构为：
+   if condition1:
+       do thing1
+   elif condition2:
+       do thing2
+   else:
+       do thing3
+   
+--使用多个elif代码块
+ *if-elif-elif-...-elif-else
+ 
+--if-elif语句后可不使用else作为结尾
+ 
+--多个条件测试
+  *if-elif-else语句其中一个为真后就不再执行其他语句，所以有时需要使用多个if语句
+  *该语句结构为
+   if condition 1:
+       do thing 1
+   if conditon 2:
+       do thing 2
+       
+    ......
+    
+   if condition x:
+       do thing x
+▶使用if语句处理列表
+--检查特殊元素
