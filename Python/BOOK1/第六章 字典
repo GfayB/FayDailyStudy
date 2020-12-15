@@ -43,6 +43,49 @@
 --遍历字典所有元素
   *使用for循环来遍历字典元素，并使用items()函数来遍历。
    以上方的dic为例子
-   for key,value om dic.items():
+   for key,value in dic.items():
        print ("\nKey:" + key)
        print ("Value:" + str(value))
+--遍历字典中所有的键【keys()】或者默认遍历,可以使用keys()方法来显式表达键的遍历
+  *使用方法keys()+for循
+   for key in dic.keys():
+       print(key)
+  *省略掉keys()方法直接遍历也会默认输出所有键
+   for key in dic:
+       print(key)
+
+--按顺序遍历字典中的所有值
+  *要使获取的值按照某种顺序排列，可以在for循环中使用sorted()方法创建临时顺序副本
+  *如按照键的顺序进行排列关联值。使用语句的结构为
+   for key in sorted(dic.keys())：
+       print（key）
+       print(dic[key])
+--使用set()方法来创建无重复元素的【集合】
+  *set()方法会提取当前元素集中无重复的元素，然后形成一个组合
+
+▶嵌套【字典和列表之间的嵌套或者字典的自嵌套】
+--字典列表
+  *顾名思义就是由字典组成的列表
+  *列表结构为list = [dic1,dic2,..]
+  
+--在字典中存储列表
+  *字典的键关联的值可以是列表的形式
+  *结构如：
+   dic={
+       'a':1,
+       'b':[2,3,4,5...]
+       ...
+   }
+   
+--在字典中嵌套字典
+  *使用字典对字典进行嵌套
+  *结构如：
+  dic = {
+     'dic1':{
+         ...
+     }
+     'dic2':{
+         ...
+     }
+     ...
+  }
