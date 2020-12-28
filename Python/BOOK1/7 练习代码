@@ -14,3 +14,15 @@ while polling_active:
 print("/n--- Poll request ---")
 for name,repsonse in responses.items():
     print(name + " would like to climb " + response + ".")
+
+#7-8
+sandwich_orders = ['Beef Sandwich','Pork Sandwich','Tomato Sandwich']
+print (sandwich_orders)
+finished_sandwiches = []
+
+while sandwich_orders:
+    this_sandwich = sandwich_orders.pop()
+    print("I made your "+ this_sandwich + '.')
+    finished_sandwiches.append(this_sandwich)
+print(finished_sandwiches)    
+print("All sandwiches have been finished!")
