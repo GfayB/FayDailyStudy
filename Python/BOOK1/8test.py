@@ -16,3 +16,10 @@ def describe_pet(animal_type,pet_name):
 
 describe_pet("dog","coder")
 describe_pet("cat","milk")
+
+#8.2.2
+def describe_pet(animal_type,pet_name):
+    print ("I have a "+ animal_type + ",and I call it " + pet_name +"!")
+
+describe_pet(animal_type = "dog",pet_name = "coder")
+describe_pet(animal_type = "cat",pet_name = "milk")   
