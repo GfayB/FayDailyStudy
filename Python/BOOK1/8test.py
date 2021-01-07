@@ -35,3 +35,10 @@ describe_pet(pet_age = 5,pet_name = 'milly')
 
 #重新指定所有参数的值
 describe_pet(pet_age = 4,pet_name = 'micky',animal_type = 'cat')
+
+#8.3.1
+def get_formatted_name (first_name,last_name):
+    full_name = first_name +' '+last_name
+    return full_name.title()
+musician = get_formatted_name('jimi','hendrix')
+print(musician)
