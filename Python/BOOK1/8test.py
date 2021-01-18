@@ -76,3 +76,56 @@ while True:
         break
     formatted_name = get_formatted_name(f_name,l_name)
     print("\nHello,"+formatted_name + "!")
+
+#8.4.1 使用函数对列表进行修改
+
+#定义打印模型函数
+def print_models(unprinted_designs,completed_models):
+    #use a while-loop
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        print ("Printing model : " + current_design)
+        completed_models.append(current_design)
+        
+#define a function to show all the models that have been completed
+def show_completed_models(completed_models):
+    print("\nThe following models have been printed:")
+    #use a for-loop
+    for completed_model in completed_models:
+        print(completed_model)
+
+#定义列表
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+#finally print all the results that we want
+print_models(unprinted_designs,completed_models)
+show_completed_models(completed_models)
+       
+#8.4.2 use a copy list to keep the origin list
+
+#定义打印模型函数
+def print_models(unprinted_designs,completed_models):
+    #use a while-loop
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        print ("Printing model : " + current_design)
+        completed_models.append(current_design)
+        
+#define a function to show all the models that have been completed
+def show_completed_models(completed_models):
+    print("\nThe following models have been printed:")
+    #use a for-loop
+    for completed_model in completed_models:
+        print(completed_model)
+
+#定义列表
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+#finally print all the results that we want
+#use list[:] to pass a list copy
+print_models(unprinted_designs[:],completed_models)
+print(unprinted_designs)
+print(completed_models)
+show_completed_models(completed_models)
