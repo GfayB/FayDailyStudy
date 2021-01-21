@@ -103,7 +103,6 @@ print_models(unprinted_designs,completed_models)
 show_completed_models(completed_models)
        
 #8.4.2 use a copy list to keep the origin list
-
 #定义打印模型函数
 def print_models(unprinted_designs,completed_models):
     #use a while-loop
@@ -129,3 +128,20 @@ print_models(unprinted_designs[:],completed_models)
 print(unprinted_designs)
 print(completed_models)
 show_completed_models(completed_models)
+
+#8.5.0
+def make_pizza(*toppings):
+    print(toppings)
+
+make_pizza("peperoni")
+make_pizza("mushroom","green peppers","extra cheese")
+       
+#8.5.1
+def make_pizza(size,*toppings):
+    print("\nMaking a "+str(size)+
+          "-inch pizza with the following toppings:")
+    for topping in toppings:
+        print("-"+ topping)
+
+make_pizza(16 ,"pepperoni")
+make_pizza(12,"mushroom","green pepper","extra cheese")
