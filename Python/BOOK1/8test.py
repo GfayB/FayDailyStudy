@@ -145,3 +145,39 @@ def make_pizza(size,*toppings):
 
 make_pizza(16 ,"pepperoni")
 make_pizza(12,"mushroom","green pepper","extra cheese")
+
+#8.5.2
+def build_profile(first,last,**user_info):
+    #创建一个字典，其中包含我们知道的有关用户的一切
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key,value in user_info.items():
+        profile[key] = value
+    return profile
+user_profile = build_profile('albert','einstein',
+                             location = 'princeton',
+                             field = 'physics')
+print(user_profile)
+
+#8-12
+def desc_sandwich(*fillings):
+    print("This sandwich need these fillings:")
+    for filling in fillings:
+        print("-" + filling)
+        
+desc_sandwich('beef','tomato')
+desc_sandwich('pork','beef','tomato')
+       
+#8-14
+def car_info(brand,design,**else_info):
+    info = {}
+    info['car_brand'] = brand
+    info['car_design'] = design
+    for key,value in else_info.items():
+        info[key] = value
+    return info
+info = car_info('subaru','outback',
+                color = 'blue',
+                two_pack = True)
+print (info)
